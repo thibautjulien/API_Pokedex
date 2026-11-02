@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: pokedex-api
+  datasource:
+    url: jdbc:postgresql://localhost:5433/pokedex
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+cors:
+  allowed-origins:
+    - http://localhost:4200
